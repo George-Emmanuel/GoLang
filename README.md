@@ -1,65 +1,100 @@
-<h1 align="center">🚀 GoLang Starter Project</h1>
+# Go example projects
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Go-1.22-blue?style=for-the-badge&logo=go" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" />
-</p>
+[![Go Reference](https://pkg.go.dev/badge/golang.org/x/example.svg)](https://pkg.go.dev/golang.org/x/example)
 
----
+This repository contains a collection of Go programs and libraries that
+demonstrate the language, standard libraries, and tools.
 
-<h2>📁 Project Structure</h2>
+## Clone the project
 
-<pre>
-project-name/
-├── cmd/            # Application entry points
-│   └── app/        # Main app
-├── pkg/            # Library code to be used by external apps
-├── internal/       # Private application code
-├── config/         # Configuration files (YAML, JSON, ENV)
-├── deploy/         # Docker, CI/CD, Helm charts etc.
-├── scripts/        # Developer tools and automation scripts
-├── test/           # External test data and mocks
-├── go.mod          # Go module definition
-├── go.sum          # Go module checksums
-└── README.md
-</pre>
-
----
-
-<h2>⚙️ Setup</h2>
-
-```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
-go mod tidy
-
-go run ./cmd/app
-
-go fmt ./...
-go vet ./...
-go test ./...
-
-go build -o bin/app ./cmd/app
 ```
-<h2>✅ Features</h2>
-Idiomatic Go directory layout
-Built-in logging and error handling
-Graceful shutdown via context
-Modular, testable components
-Config via .env, JSON, or YAML
-Docker-ready and CI/CD friendly
+$ git clone https://go.googlesource.com/example
+$ cd example
+```
+https://go.googlesource.com/example is the canonical Git repository.
+It is mirrored at https://github.com/golang/example.
 
-<h2>🛠️ Tech Stack</h2>
-| Tool            | Purpose           |
-| --------------- | ----------------- |
-| Go              | Language          |
-| slog/zap        | Logging           |
-| chi/mux         | HTTP Routing      |
-| cobra           | CLI Apps          |
-| viper/envconfig | Config Management |
+## [hello](hello/) and [hello/reverse](hello/reverse/)
 
-<h2>📚 References</h2>
-<a href="https://github.com/golang-standards/project-layout" target="_blank">Go Project Layout</a>
-<a href="https://golang.org/doc/effective_go.html" target="_blank">Effective Go</a>
-<a href="https://github.com/tmrts/go-patterns" target="_blank">Go Patterns</a>
+```
+$ cd hello
+$ go build
+$ ./hello -help
+```
+A trivial "Hello, world" program that uses a library package.
+
+The [hello](hello/) command covers:
+
+* The basic form of an executable command
+* Importing packages (from the standard library and the local repository)
+* Printing strings ([fmt](//golang.org/pkg/fmt/))
+* Command-line flags ([flag](//golang.org/pkg/flag/))
+* Logging ([log](//golang.org/pkg/log/))
+
+The [reverse](hello/reverse/) reverse covers:
+
+* The basic form of a library
+* Conversion between string and []rune
+* Table-driven unit tests ([testing](//golang.org/pkg/testing/))
+
+## [helloserver](helloserver/)
+
+```
+$ cd helloserver
+$ go run .
+```
+
+A trivial "Hello, world" web server.
+
+Topics covered:
+
+* Command-line flags ([flag](//golang.org/pkg/flag/))
+* Logging ([log](//golang.org/pkg/log/))
+* Web servers ([net/http](//golang.org/pkg/net/http/))
+
+## [outyet](outyet/)
+
+```
+$ cd outyet
+$ go run .
+```
+A web server that answers the question: "Is Go 1.x out yet?"
+
+Topics covered:
+
+* Command-line flags ([flag](//golang.org/pkg/flag/))
+* Web servers ([net/http](//golang.org/pkg/net/http/))
+* HTML Templates ([html/template](//golang.org/pkg/html/template/))
+* Logging ([log](//golang.org/pkg/log/))
+* Long-running background processes
+* Synchronizing data access between goroutines ([sync](//golang.org/pkg/sync/))
+* Exporting server state for monitoring ([expvar](//golang.org/pkg/expvar/))
+* Unit and integration tests ([testing](//golang.org/pkg/testing/))
+* Dependency injection
+* Time ([time](//golang.org/pkg/time/))
+
+## [appengine-hello](appengine-hello/)
+
+A trivial "Hello, world" App Engine application intended to be used as the
+starting point for your own code. Please see
+[Google App Engine SDK for Go](https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go)
+and [Quickstart for Go in the App Engine Standard Environment](https://cloud.google.com/appengine/docs/standard/go/quickstart).
+
+## [gotypes](gotypes/)
+
+The `go/types` package is a type-checker for Go programs. It is one of the most
+complex packages in Go's standard library, so we have provided this tutorial to
+help you find your bearings. It comes with several example programs that you
+can obtain using `go get` and play with as you learn to build tools that analyze
+or manipulate Go programs.
+
+## [template](template/)
+
+A trivial web server that demonstrates the use of the
+[`template` package](https://golang.org/pkg/text/template/)'s `block` feature.
+
+## [slog-handler-guide](slog-handler-guide/)
+
+The `log/slog` package supports structured logging.
+It features a flexible backend in the form of a `Handler` interface.
+This guide can help you write your own handler.
