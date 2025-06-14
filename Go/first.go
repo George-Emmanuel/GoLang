@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("test")
+
+	//Declaring an empty slice in shorthand
+	//Appening elements to the slice
+	a := []int{}
+	a = append(a, 2, 3, 4, 5)
+	fmt.Println(a)
 }
