@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func operators() {
 	num1 := 10
 	num2 := 20
 
@@ -93,3 +93,9 @@ func main() {
 	num3 = 100
 	fmt.Println("Reset num3 to:", num3)
 }
+
+/*Uncomment the following line to run the operators function
+func main() {
+	operators()
+}
+*/
