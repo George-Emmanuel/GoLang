@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func flow() {
 	// For loop
 	for i := 0; i < 10; i++ {
 		if i%2 == 0 {
@@ -116,3 +116,9 @@ func main() {
 	defer fmt.Println("This will be printed at the end of the main function.")
 	fmt.Println("Testing to see defer function execution.")
 }
+
+/* Uncomment the following line to run the flow function
+func main() {
+	flow()
+}
+*/
