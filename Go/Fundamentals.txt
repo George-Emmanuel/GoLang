@@ -1,0 +1,40 @@
+Go supports several basic data types:
+
+// Boolean
+var isActive bool = true
+
+// Integer types
+var age int = 30
+var smallNumber int8 = 127
+var mediumNumber int16 = 32767
+var largeNumber int32 = 2147483647
+var hugeNumber int64 = 9223372036854775807
+
+// Unsigned integer types
+var uAge uint = 30
+var uSmallNumber uint8 = 255
+var uMediumNumber uint16 = 65535
+var uLargeNumber uint32 = 4294967295
+var uHugeNumber uint64 = 18446744073709551615
+
+// Floating point types
+var price float32 = 19.99
+var balance float64 = 123456.789
+
+// Complex numbers
+var c1 complex64 = 1 + 2i
+var c2 complex128 = 2 + 3i
+
+// String
+var name string = "GoLang"
+
+// Byte (alias for uint8)
+var b byte = 'A'
+
+// Rune (alias for int32, represents a Unicode code point)
+var r rune = '世'
+
+// Zero values
+var defaultInt int      // 0
+var defaultBool bool    // false
+var defaultString string // ""
