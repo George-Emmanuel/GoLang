@@ -114,5 +114,5 @@ func main() {
 
 	// Defer statement
 	defer fmt.Println("This will be printed at the end of the main function.")
-	fmt.Println("End of main function execution.")
+	fmt.Println("Testing to see defer function execution.")
 }
