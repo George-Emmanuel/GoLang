@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func fundamentals() {
 
 	//Declaring	and manipulating an array
 	var arr [5]int
@@ -37,3 +37,8 @@ func main() {
 	fmt.Println("Split_string Contains 'gmail' ==> ", strings.Contains(split_string[1], "gmail"))
 	fmt.Println("Split_string Contains 'yahoo' ==> ", strings.Contains(split_string[1], "yahoo"))
 }
+
+/* Uncomment to run the code
+func main() {
+	fundamentals()
+}*/
