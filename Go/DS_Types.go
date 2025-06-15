@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func ds_types() {
 	n := 10
 
 	// Pointer to n
@@ -49,3 +49,9 @@ func main() {
 	delete(mapExample, "one")
 	fmt.Println("Map after deleting 'one':", mapExample)
 }
+
+/* Uncomment the following line to run the ds_types function
+func main() {
+	ds_types()
+}
+*/
