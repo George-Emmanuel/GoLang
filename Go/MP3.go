@@ -6,7 +6,7 @@ import (
 	"os/exec"
 )
 
-func main() {
+func downloader() {
 	var url string
 	fmt.Print("Enter YouTube URL: ")
 	fmt.Scanln(&url)
@@ -21,3 +21,9 @@ func main() {
 		fmt.Println("Download complete.")
 	}
 }
+
+/* Uncomment the following lines to run the downloader function directly
+func main() {
+	downloader()
+}
+*/
