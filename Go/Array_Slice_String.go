@@ -10,7 +10,7 @@ import (
 // ***** Slices are dynamic-size, flexible views into arrays.
 // ***** Strings are immutable sequences of bytes, often used to represent text.
 // ***** The strings package provides functions for manipulating UTF-8 encoded strings.
-// ***** The fmt package provides functions for formatted I/O, including printing to the console
+// ***** The fmt package provides functions for formatted I/O, including printing to the console.
 
 func fundamentals() {
 
