@@ -6,7 +6,7 @@ import (
 )
 
 // ***** Array, Slice, and String Fundamentals in Go.
-// ***** Arrays are fixed-size collections of elements of the same type
+// ***** Arrays are fixed-size collections of elements of the same type.
 // ***** Slices are dynamic-size, flexible views into arrays
 // ***** Strings are immutable sequences of bytes, often used to represent text
 // ***** The strings package provides functions for manipulating UTF-8 encoded strings
