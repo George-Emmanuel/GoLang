@@ -10,7 +10,7 @@ func ds_types() {
 	// Pointer to n.
 	// Here, we create a pointer to the variable n.
 	// and assign it to the variable add.
-	// The pointer add now holds the address of n
+	// The pointer add now holds the address of n.
 	add := &n
 	val := *add
 	fmt.Println("The value of n is:", n)
