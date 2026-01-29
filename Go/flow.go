@@ -20,7 +20,7 @@ func flow() {
 		fmt.Printf("Index: %d, Value: %d\n", index, value)
 	}
 
-	// Nested for loop
+	// Nested for loop.
 	for i := 1; i <= 3; i++ {
 		for j := 1; j <= 3; j++ {
 			fmt.Printf("Outer loop %d, Inner loop %d\n", i, j)
