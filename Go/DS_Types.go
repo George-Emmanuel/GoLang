@@ -7,7 +7,7 @@ import (
 func ds_types() {
 	n := 10
 
-	// Pointer to n.
+	// Pointer to n
 	// Here, we create a pointer to the variable n
 	// and assign it to the variable add
 	// The pointer add now holds the address of n
